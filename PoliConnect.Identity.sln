@@ -3,9 +3,54 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2B48B464-EA19-4CFF-BA4E-AA2DFF5F235A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{4FEDF2AD-88E2-40F2-975E-6E5F07025498}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoliConnect.Identity.API", "src\PoliConnect.Identity.API\PoliConnect.Identity.API.csproj", "{9D407A3B-1180-4073-8A16-A284EE7DBC6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoliConnect.Identity.Application", "src\PoliConnect.Identity.Application\PoliConnect.Identity.Application.csproj", "{CB0DECDD-5BB8-4D48-9E8F-BF05FFC05A6C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoliConnect.Identity.Domain", "src\PoliConnect.Identity.Domain\PoliConnect.Identity.Domain.csproj", "{1F798B4F-C76A-4BA3-9FE8-D1558AE58AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PoliConnect.Identity.Infrastructure", "src\PoliConnect.Identity.Infrastructure\PoliConnect.Identity.Infrastructure.csproj", "{50D8DD3E-6388-450A-BCD6-A32878D2725D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F9703A88-F3DE-4CDC-A0EF-6BD90514AA16}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D407A3B-1180-4073-8A16-A284EE7DBC6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D407A3B-1180-4073-8A16-A284EE7DBC6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D407A3B-1180-4073-8A16-A284EE7DBC6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D407A3B-1180-4073-8A16-A284EE7DBC6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB0DECDD-5BB8-4D48-9E8F-BF05FFC05A6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB0DECDD-5BB8-4D48-9E8F-BF05FFC05A6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB0DECDD-5BB8-4D48-9E8F-BF05FFC05A6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB0DECDD-5BB8-4D48-9E8F-BF05FFC05A6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F798B4F-C76A-4BA3-9FE8-D1558AE58AAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F798B4F-C76A-4BA3-9FE8-D1558AE58AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F798B4F-C76A-4BA3-9FE8-D1558AE58AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F798B4F-C76A-4BA3-9FE8-D1558AE58AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50D8DD3E-6388-450A-BCD6-A32878D2725D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50D8DD3E-6388-450A-BCD6-A32878D2725D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50D8DD3E-6388-450A-BCD6-A32878D2725D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50D8DD3E-6388-450A-BCD6-A32878D2725D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9D407A3B-1180-4073-8A16-A284EE7DBC6C} = {2B48B464-EA19-4CFF-BA4E-AA2DFF5F235A}
+		{CB0DECDD-5BB8-4D48-9E8F-BF05FFC05A6C} = {2B48B464-EA19-4CFF-BA4E-AA2DFF5F235A}
+		{1F798B4F-C76A-4BA3-9FE8-D1558AE58AAA} = {2B48B464-EA19-4CFF-BA4E-AA2DFF5F235A}
+		{50D8DD3E-6388-450A-BCD6-A32878D2725D} = {2B48B464-EA19-4CFF-BA4E-AA2DFF5F235A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {21D4C2BF-1470-4896-9E0D-5C62AEFFC12C}
