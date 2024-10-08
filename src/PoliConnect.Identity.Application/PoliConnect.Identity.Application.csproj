@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PoliConnect.Identity.Domain\PoliConnect.Identity.Domain.csproj" />
+    <ProjectReference Include="..\PoliConnect.Identity.Infrastructure\PoliConnect.Identity.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
