@@ -5,7 +5,7 @@ using PoliConnect.Identity.Application.Services.Interfaces;
 
 namespace PoliConnect.Identity.API.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/v1/auth")]
 [ApiController]
 public class IdentityController : ControllerBase
 {
@@ -16,6 +16,8 @@ public class IdentityController : ControllerBase
         _identityService = identityService;
     }
 
+    [Route("register")]
+    [HttpPost]
     public async Task<IActionResult> Register(RegisterDTO registerDTO)
     {
         var result = await _identityService.RegisterAsync(registerDTO);
